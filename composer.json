@@ -1,0 +1,38 @@
+{
+    "name": "alidut/php-turkish-helpers",
+    "description": "PHP'de Türkçe metin sıralama, büyük/küçük harf dönüşümü ve telefon numarası normalleştirme. intl eklentisi gerektirmez.",
+    "keywords": ["turkish", "turkce", "collation", "sorting", "locale", "phone", "e164", "normalization"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Dut",
+            "email": "alidut95@gmail.com",
+            "homepage": "https://github.com/alidut33"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AliDut\\TurkishHelpers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AliDut\\TurkishHelpers\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
